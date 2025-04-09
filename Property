@@ -1,0 +1,30 @@
+package assignment4;
+
+public class Property {
+	private String name;
+    private String city;
+    private double rentalAmount;
+    private String owner;
+    private Plot plot;
+
+
+    public Property(String name, String city, double rentalAmount, String owner, Plot plot) {
+        this.name = name;
+        this.city = city;
+        this.rentalAmount = rentalAmount;
+        this.owner = owner;
+        this.plot = plot;
+    }
+
+    // get and set all the information 
+    public String getName() { return name; }
+    public String getCity() { return city; }
+    public double getRentalAmount() { return rentalAmount; }
+    public String getOwner() { return owner; }
+    public Plot getPlot() { return plot; }
+
+    @Override
+    public String toString() {
+        return name + "," + city + "," + owner + "," + rentalAmount;
+    }
+}
